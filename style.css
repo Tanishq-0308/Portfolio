@@ -19,14 +19,14 @@ body::-webkit-scrollbar-thumb{
   background-color: #000000;
   border-radius: 50px;
 }
-#cursor{
+/* #cursor{
   height: 20px;
   width: 20px;
   background-color:#ffffffd2;
   border-radius: 50%;
   position: fixed;
   z-index: 99;
-}
+} */
 /* #cursor-blr{
   height: 300px;
   width: 300px;
