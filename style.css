@@ -5,6 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: gilroy;
+  color: white;
 }
 
 body {
@@ -19,14 +20,14 @@ body::-webkit-scrollbar-thumb{
   background-color: #000000;
   border-radius: 50px;
 }
-/* #cursor{
+#cursor{
   height: 20px;
   width: 20px;
   background-color:#ffffffd2;
   border-radius: 50%;
   position: fixed;
   z-index: 99;
-} */
+}
 /* #cursor-blr{
   height: 300px;
   width: 300px;
@@ -79,6 +80,10 @@ header {
   color: #a0a09a;
   font-size: 1.2rem;
   padding: 0.3rem;
+}
+.menu-items a:hover{
+  color: #585855;
+  cursor:pointer;
 }
 
 /* .menu-items a:hover {
@@ -364,6 +369,8 @@ header {
 .portfolio {
   background: #000000;
   padding: 6rem 0;
+  height: auto;
+  width: 100%;
 }
 
 .proj-heading h1{
@@ -375,23 +382,47 @@ header {
   
 }
 
-
-
+.portfolio-content{
+  /* background-color: white; */
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  row-gap: 100px;
+  /* width: 100%;
+  min-height: 100vh; */
+  padding: 60px;
+}
+@media(max-width:1150px){
+  .portfolio-content{
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+@media(max-width:850px){
+  .portfolio-content{
+    grid-template-columns: repeat(1,1fr);
+    justify-content: center;
+    align-items: center;
+  }
+}
 /* ////.....proj2.....//// */
 
 .proj-2{
   display: flex;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
   margin-top: 3rem;
   margin-bottom: 5rem;
+  flex-direction: column;
+  height: 200px;
+  width: 200px;
+  margin: 20px;
 }
 
+
 .proj2-img{
-  height: 330px;
-  width: 380px;
+  height: 300px;
+  width: 300px;
   object-fit: cover;
-  border-radius: 50%;
+  /* border-radius: 50%; */
   box-shadow: 0 20px 10px -10px rgb(37 41 52 / 31%);
   margin-right: 1.7rem;
   transition: all ease 0.5s;
